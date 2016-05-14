@@ -7,8 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="navbarContainer">
+  <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <div class="navbar-inner">
+        <div class="container">
+          <a class="navbar-brand" href="#">Joebook</a>
+            <ul class="nav-inline">
 
-<%= yield %>
+              <li class="nav-item"><%= link_to "All Statuses", statuses_path , :class => "nav-link" %></li>
+              <ul>
+        </div>
+    </div>
+  </nav>
+</div>
 
+  <div class="container">
+  <%= yield %>
+  </div>
 </body>
 </html>
